@@ -1,0 +1,253 @@
+html{
+	font-size: 10px;
+}
+
+
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+#wrapper{
+	display: grid;
+	grid-template-areas:  
+	"header"
+	"hero-image"
+	"mission"
+	"grid"
+	"video"
+	"footer";
+
+} 
+
+
+
+
+/*Styling the NAVIGATION BAR*/
+
+#header{
+		grid-area: header;
+		display: flex;
+		position: sticky;
+		top: 0px;
+		background-color: #1f3d73;
+	  width: 100%;
+		height: 100px;
+		align-content: center;
+		color: white;
+		align-items: center;
+		font-family: 'Molle', cursive;
+
+		
+
+
+
+
+}
+
+
+nav {
+	
+	
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+  font-size: 4rem;
+
+
+
+}
+
+.nav-link a {
+	color: inherit;
+	text-decoration: none;
+
+}
+
+  
+
+
+
+
+/*Styling the Main Page*/
+
+
+
+ 
+ #poster {
+ 	grid-area: hero-image;
+  background-image: url("hero-image.jpg");
+  font-size: 10rem;
+  height: 40vw;
+  font-family: 'Molle', cursive;
+  color: white;
+  text-align: center;
+  
+
+ }
+#content > div{
+	border: 1px solid black;
+}
+
+
+#mission img {
+	width: 20%;
+}
+
+#mission {
+display:grid;
+justify-items: center;
+grid-gap: 2.5rem;
+background-color: lightcyan;
+color: darkblue;
+text-decoration:none ;
+
+}
+
+#mission figcaption h2 {
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+font-size: 4rem;
+}
+
+
+figcaption p{
+	font-family: 'Molle', cursive;
+	font-size: 5rem;
+}
+
+
+#grid{
+	grid-area: grid;
+	text-align: center;
+}
+
+#grid h2{
+	grid-area: grid;
+	text-align: center;
+  font-family: 'Molle', cursive;
+  padding-top: 1.5rem;
+}
+
+
+ #grid p {
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+font-size: 2rem; 
+padding: 2rem;	
+ }
+
+
+
+ .childgrid figure img  {
+ 
+ background-color: ghostwhite;
+ border: 1px solid blue;
+
+
+ }
+
+ .childgrid figcaption{
+ 	font-family: 'IBM Plex Sans Condensed', sans-serif;
+font-size: 3rem;
+ }
+
+
+
+#video{
+	grid-area: video;
+	display: flex;
+	justify-content: center;
+}
+
+#footer{
+	grid-area: footer;
+
+
+}
+#footer h3 {
+  font-family: 'Molle', cursive;
+
+}
+
+#footer img {
+	width: 50px;
+}
+
+
+.connect {
+	text-align: center;
+
+}
+
+.email h3{
+	font-size: 2.6rem;
+text-align: center;
+
+}
+
+#email{
+
+ height: 4rem;
+width: 50%;
+border: 1px solid blueviolet;
+}
+
+
+#submit{
+	width: 40%;
+	height: 4rem;
+	border: 1px solid blueviolet;
+
+}
+
+[placeholder="Enter your email"]{
+	font-size: 2.8rem;
+	font-weight: bold;
+	 font-family: 'Molle', cursive;
+
+}
+
+
+[id="submit"]{
+	font-size: 2.5rem;
+	font-weight: bold;
+		font-family: 'IBM Plex Sans Condensed', sans-serif;
+
+}
+
+/*Media queries*/
+
+@media (min-width: 768px){
+	nav{
+		font-size: 3rem;
+
+	}
+
+
+#grid{
+	font-size: 3rem;
+}
+
+
+	.childgrid {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-content: space-between;
+
+
+	}
+
+
+	#footer h3 {
+  
+font-size: 3rem;
+  }
+
+#footer img{
+	width: 100px;
+}
+
+}
